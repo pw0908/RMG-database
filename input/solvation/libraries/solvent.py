@@ -833,3 +833,178 @@ u"""
 """,
 )
 
+entry(
+    index = 26,
+    label = "methanol",
+    molecule = "CO",
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at 298K
+        s_g = 1.317,
+        b_g = 1.396,
+        e_g = -0.338,
+        l_g = 0.773,
+        a_g = 3.826,
+        c_g = -0.039,
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = None,
+    ),
+    shortDesc = u"""Abraham ref [3], Oscar Mar 4, 2019""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 27,
+    label = "methanol_50_water_50",
+    molecule = "CO",
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g=2.743 + -0.222,
+        b_g=4.814 + -1.747,
+        e_g=0.822 + 0.223,
+        l_g=-0.213 + 1.662,
+        a_g=3.904 + 0.264,
+        c_g=-1.271 + 0.023,
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = None,
+    ),
+    shortDesc = u"""Abraham ref [4], Oscar Mar 4, 2019""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 28,
+    label = "acetonitrile_40_water_60",
+    molecule = "CC#N",
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g=2.743 + -0.09,
+        b_g=4.814 + -1.88,
+        e_g=0.822 + 0.04,
+        l_g=-0.213 + 1.56,
+        a_g=3.904 + -0.45,
+        c_g=-1.271 + -0.17,
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = None,
+    ),
+    shortDesc = u"""Abraham ref [5], Oscar Mar 4, 2019""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 28,
+    label = "acetonitrile_60_water_40",
+    molecule = "CC#N",
+    solvent = SolventData(
+        # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
+        # parameter = gas-to-water + water-to-solvent = gas-to-solvent
+        s_g=2.743 + -0.33,
+        b_g=4.814 + -0.98,
+        e_g=0.822 + 0.11,
+        l_g=-0.213 + 0.93,
+        a_g=3.904 + -0.44,
+        c_g=-1.271 + -0.18,
+        # Mintz parameters for enthalpy (H) correction
+        s_h = None,
+        b_h = None,
+        e_h = None,
+        l_h = None,
+        a_h = None,
+        c_h = None,
+        # viscosity parameters
+        A = None,
+        B = None,
+        C = None,
+        D = None,
+        E = None,
+        # These are SOLUTE parameters used for intrinsic rate correction in H-abstraction rxns
+        alpha = None,
+        beta = None,
+        # Dielectric constant
+        eps = None,
+    ),
+    shortDesc = u"""Abraham ref [5], Oscar Mar 4, 2019""",
+    longDesc =
+u"""
+
+""",
+)
+
+## Reference List
+# [1] Predicting Abraham model solvent coefficients.
+# Bradley, Jean-Claude & H Abraham, Michael & Acree, William & Lang, Andrew. (2015).
+# Chemistry Central journal. 9. 12. 10.1186/s13065-015-0085-4.
+#
+# [2] Solubility predictions for crystalline nonelectrolyte solutes dissolved in organic solvents based upon the Abraham general solvation model.
+# Acree, William & Abraham, M.H.. (2001).
+# Canadian Journal of Chemistry. 79. 10.1139/cjc-79-10-1466.
+#
+# [3] The hydrogen bond properties of water from 273 K to 573 K; equationsfor the prediction of gas-water partition coefficients
+# Michael H. Abraham and William E. Acree Jr
+# Phys. Chem. Chem. Phys., 2012,14, 7433–7440
+#
+# [4] Equations for the Partition of Neutral Molecules, Ionsand Ionic Species from Water to Water–MethanolMixtures
+# Michael H. Abraham and William E. Acree Jr
+# J Solution Chem (2016) 45:861–874
+#
+# [5] Application of Solvation Model to Prediction of the Solute Retention in Liquid Chromatography over a Wide Range of Mobile-Phase Compositions
+# Š. JIRKAL*, M. MACHOVCOVÁ, AND J.G.K. ŠEVČÍK
+# DOI: 10.1556/1326.2016.28.1.06
