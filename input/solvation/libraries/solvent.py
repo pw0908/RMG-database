@@ -874,7 +874,7 @@ u"""
 entry(
     index = 27,
     label = "methanol_50_water_50",
-    molecule = "CO",
+    molecule = ["CO", "O"],
     solvent = SolventData(
         # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
         # parameter = gas-to-water + water-to-solvent = gas-to-solvent
@@ -913,7 +913,7 @@ u"""
 entry(
     index = 28,
     label = "acetonitrile_40_water_60",
-    molecule = "CC#N",
+    molecule = ["CC#N", "O"],
     solvent = SolventData(
         # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
         # parameter = gas-to-water + water-to-solvent = gas-to-solvent
@@ -950,9 +950,9 @@ u"""
 )
 
 entry(
-    index = 28,
+    index = 29,
     label = "acetonitrile_60_water_40",
-    molecule = "CC#N",
+    molecule = ["CC#N", "O"],
     solvent = SolventData(
         # Abraham gas-to-solvent (NOT water-to-solvent) parameters for free energy (G) correction at
         # parameter = gas-to-water + water-to-solvent = gas-to-solvent
