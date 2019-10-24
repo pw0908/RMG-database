@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+
 name = "Non Atom Centered Platts Groups"
 shortDesc = u""
 longDesc = u"""
@@ -899,4 +900,3 @@ L1: R
     L2: SdOdOdN
 """
 )
-
